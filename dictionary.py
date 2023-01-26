@@ -1,4 +1,4 @@
-'''
+
 #in this lesson we will learn how to create dictionaries
 content_rating = ['4+','7+','12+','17+']
 numbers = [4433,987,1155,622]
@@ -25,7 +25,7 @@ print(type(thisdict))
 ### the dict() constructor
 thisdict =dict(name = "john",age = 36,country = "nepal")
 print(thisdict)
-'''
+
 # Accessing items
 dictor= {
      "brand":"gucchi",
@@ -176,3 +176,19 @@ print(q)
 #### make a copy of a dictionary with the dict():
 q = dict(bike)
 print(q)
+
+
+######################################################################################
+##### NESTED DICTIONARIES
+
+my_family = {
+    "child1": {
+        "name":"fin",
+        "age":12
+    },
+    "child2":{
+        "name":"drawft",
+        "age":10
+    }
+}
+print (my_family)
