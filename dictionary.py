@@ -1,4 +1,4 @@
-
+'''
 #in this lesson we will learn how to create dictionaries
 content_rating = ['4+','7+','12+','17+']
 numbers = [4433,987,1155,622]
@@ -192,3 +192,30 @@ my_family = {
     }
 }
 print (my_family)
+
+
+'''
+
+##############################################################
+#### Alternative  way to create a dictionary ####
+content_rating = {}
+content_rating['4+']= 1155
+content_rating['5+']=987
+
+print(content_rating)
+
+
+###################################
+# checking for membership
+
+content_rating ={'4+':4433,'9+':987,'12+':1155,'17+':622}
+print('10+' in content_rating)
+#For instance, checking if the string '10+' exists in the 
+# dictionary content_ratings returns False because there's 
+# no dictionary key '10+' in content_ratings.
+
+is_in_dictionary_1 = '9+' in content_rating
+is_in_dictionary_2 = 987 in content_rating
+if '17+' in content_rating:
+    result = "it exists"
+    print(result)
